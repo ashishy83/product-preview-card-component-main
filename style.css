@@ -1,0 +1,127 @@
+body{
+    background-color:rgb(231, 215, 218) ;
+}
+
+.main-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview{
+    background-color: white;
+    display: flex;
+    width: 45%;
+    height: 450px;
+    border-radius: 10px;
+    margin: 10%;
+}
+
+.left-preview{
+    background-image: url('./images/image-product-desktop.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 45%;
+    border-radius: 10px 0 0 10px;
+}
+
+.box{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.right-preview{
+   
+    margin: 4%;
+    width: 45%;
+    box-sizing: content-box;
+}
+
+.title{
+    letter-spacing: 5px;
+    font-weight: lighter;
+    opacity: 50%;
+    margin: 2%;
+}
+
+.brand-name{
+    font-weight: bolder;
+    font-size: 2.8rem;
+    margin: 2%;
+    line-height: 40px;
+}
+
+.details{
+    opacity: 50%;
+    font-size: 18px;
+    margin: 5%;
+    line-height: 28px;
+}
+
+.price{
+    margin: 3%;
+}
+.price-disc{
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(45, 78, 9);
+}
+
+.price-original{
+    margin-bottom: -15%;
+    margin-left: 10%;
+    text-decoration: line-through;
+    font-size: small;
+}
+
+.add-btn{
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(45, 78, 9);
+    border: none;
+    
+    
+}
+
+.btn{
+    color: white;
+    font-size: 15px;
+    margin: 2%;
+    
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 1100px) {
+    
+.preview{
+    width: 90%;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+
+}
+.left-preview{
+    background-image: url('./images/image-product-mobile.jpg');
+    background-size: cover;
+    height: 30%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.right-preview{
+    width: 100%;
+    height: 70%;
+}
+.box{
+    margin: 2%;
+}
+
+}
